@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F93173F12C7B6A5000546079 /* ImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = F93173F02C7B6A5000546079 /* ImageViewer */; };
+		F93173F32C7B6A5000546079 /* ImageViewerRemote in Frameworks */ = {isa = PBXBuildFile; productRef = F93173F22C7B6A5000546079 /* ImageViewerRemote */; };
+		F93173F52C7B6A8100546079 /* ImageViewerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93173F42C7B6A8100546079 /* ImageViewerPage.swift */; };
 		F9355BD62C72E5A700A74AB6 /* HowToUseLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9355BD52C72E5A700A74AB6 /* HowToUseLibraryApp.swift */; };
 		F9355BD82C72E5A700A74AB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9355BD72C72E5A700A74AB6 /* ContentView.swift */; };
 		F9355BDA2C72E5A900A74AB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9355BD92C72E5A900A74AB6 /* Assets.xcassets */; };
 		F9355BDD2C72E5A900A74AB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9355BDC2C72E5A900A74AB6 /* Preview Assets.xcassets */; };
+		F9355BE52C72E6F300A74AB6 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = F9355BE42C72E6F300A74AB6 /* AlertToast */; };
+		F9355BE82C72E71B00A74AB6 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F9355BE72C72E71B00A74AB6 /* ComposableArchitecture */; };
+		F9355BEA2C730D1000A74AB6 /* AlertToastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9355BE92C730D1000A74AB6 /* AlertToastPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F93173F42C7B6A8100546079 /* ImageViewerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerPage.swift; sourceTree = "<group>"; };
+		F93173F82C89E25500546079 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F9355BD22C72E5A700A74AB6 /* HowToUseLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToUseLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9355BD52C72E5A700A74AB6 /* HowToUseLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseLibraryApp.swift; sourceTree = "<group>"; };
 		F9355BD72C72E5A700A74AB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9355BD92C72E5A900A74AB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9355BDC2C72E5A900A74AB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9355BE92C730D1000A74AB6 /* AlertToastPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToastPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9355BE82C72E71B00A74AB6 /* ComposableArchitecture in Frameworks */,
+				F93173F12C7B6A5000546079 /* ImageViewer in Frameworks */,
+				F93173F32C7B6A5000546079 /* ImageViewerRemote in Frameworks */,
+				F9355BE52C72E6F300A74AB6 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +64,13 @@
 		F9355BD42C72E5A700A74AB6 /* HowToUseLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				F9355BD52C72E5A700A74AB6 /* HowToUseLibraryApp.swift */,
 				F9355BD72C72E5A700A74AB6 /* ContentView.swift */,
+				F9355BE92C730D1000A74AB6 /* AlertToastPage.swift */,
+				F93173F42C7B6A8100546079 /* ImageViewerPage.swift */,
+				F9355BD52C72E5A700A74AB6 /* HowToUseLibraryApp.swift */,
 				F9355BD92C72E5A900A74AB6 /* Assets.xcassets */,
 				F9355BDB2C72E5A900A74AB6 /* Preview Content */,
+				F93173F82C89E25500546079 /* README.md */,
 			);
 			path = HowToUseLibrary;
 			sourceTree = "<group>";
@@ -83,6 +99,12 @@
 			dependencies = (
 			);
 			name = HowToUseLibrary;
+			packageProductDependencies = (
+				F9355BE42C72E6F300A74AB6 /* AlertToast */,
+				F9355BE72C72E71B00A74AB6 /* ComposableArchitecture */,
+				F93173F02C7B6A5000546079 /* ImageViewer */,
+				F93173F22C7B6A5000546079 /* ImageViewerRemote */,
+			);
 			productName = HowToUseLibrary;
 			productReference = F9355BD22C72E5A700A74AB6 /* HowToUseLibrary.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,12 @@
 				Base,
 			);
 			mainGroup = F9355BC92C72E5A700A74AB6;
+			packageReferences = (
+				F9355BE32C72E6F300A74AB6 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				F9355BE62C72E71B00A74AB6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				F9355BEB2C74981500A74AB6 /* XCRemoteSwiftPackageReference "SwipeCell" */,
+				F93173EF2C7B6A5000546079 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */,
+			);
 			productRefGroup = F9355BD32C72E5A700A74AB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93173F52C7B6A8100546079 /* ImageViewerPage.swift in Sources */,
 				F9355BD82C72E5A700A74AB6 /* ContentView.swift in Sources */,
+				F9355BEA2C730D1000A74AB6 /* AlertToastPage.swift in Sources */,
 				F9355BD62C72E5A700A74AB6 /* HowToUseLibraryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +374,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F93173EF2C7B6A5000546079 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jake-Short/swiftui-image-viewer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+		F9355BE32C72E6F300A74AB6 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+		F9355BE62C72E71B00A74AB6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.0;
+			};
+		};
+		F9355BEB2C74981500A74AB6 /* XCRemoteSwiftPackageReference "SwipeCell" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EnesKaraosman/SwipeCell";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F93173F02C7B6A5000546079 /* ImageViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F93173EF2C7B6A5000546079 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = ImageViewer;
+		};
+		F93173F22C7B6A5000546079 /* ImageViewerRemote */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F93173EF2C7B6A5000546079 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = ImageViewerRemote;
+		};
+		F9355BE42C72E6F300A74AB6 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9355BE32C72E6F300A74AB6 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		F9355BE72C72E71B00A74AB6 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9355BE62C72E71B00A74AB6 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9355BCA2C72E5A700A74AB6 /* Project object */;
 }
